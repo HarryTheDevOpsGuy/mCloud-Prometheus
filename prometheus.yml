@@ -89,4 +89,4 @@ scrape_configs:
 
 
 rule_files:
-  - /app/configs/rules.d/*.yml
+  - /app/configs/rules/*.yml
