@@ -1,7 +1,7 @@
 # http://prometheus.io/docs/operating/configuration/
 
 global:
-  evaluation_interval: 10s
+  evaluation_interval: 2h
   scrape_interval: 5s
   scrape_timeout: 3s
 
