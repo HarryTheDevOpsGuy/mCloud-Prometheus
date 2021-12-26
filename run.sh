@@ -1,5 +1,5 @@
 
-PROMETHEUS_VERSION="v2.32.1"
+PROMETHEUS_VERSION="2.32.1"
 PROM_DIR="prometheus-${PROMETHEUS_VERSION}.linux-amd64"
 
 echo "Downloading latest Prometheus file"
