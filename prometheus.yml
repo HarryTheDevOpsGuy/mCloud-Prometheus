@@ -58,15 +58,15 @@ alerting:
 #         target_label: __address__
 #         replacement: blackbox:9115
 
-  # - job_name: PromStack
-  #   static_configs:
-  #   - labels:
-  #       env: monitoring
-  #       #service: PromStack
-  #     targets:
-  #     - mcloud-alertmanager.herokuapp.com:443
-  #     - mcloud-alertmanager.herokuapp.com:443
-  #     - grafana:3000
+  - job_name: PromStack
+    static_configs:
+      - labels:
+          env: monitoring
+          #service: PromStack
+        targets:
+          - mcloud-alertmanager.herokuapp.com:443
+          - mcloud-alertmanager.herokuapp.com:443
+      # - grafana:3000
 
   # - job_name: node
   #   file_sd_configs:
