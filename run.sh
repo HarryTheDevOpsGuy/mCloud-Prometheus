@@ -4,7 +4,8 @@ PROM_DIR="prometheus-${PROMETHEUS_VERSION}.linux-amd64"
 
 echo "Downloading latest Prometheus file"
 curl -sL https://github.com/prometheus/prometheus/releases/download/v${PROMETHEUS_VERSION}/${PROM_DIR}.tar.gz| tar -xz
-mv ${PROM_DIR}/prometheus bin/
+rm -rf bin
+mv ${PROM_DIR} bin
 
 ls -la bin/
 ls -la
