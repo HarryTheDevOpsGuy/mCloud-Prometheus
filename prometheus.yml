@@ -68,13 +68,13 @@ alerting:
   #         - mcloud-alertmanager.herokuapp.com:443
   #     # - grafana:3000
 
-  - job_name: node
-    file_sd_configs:
-    - files:
-      - /app/configs/file_sd/node.yml
-    basic_auth:
-      username: Foo
-      password: Bar
+  # - job_name: node
+  #   file_sd_configs:
+  #   - files:
+  #     - /app/configs/file_sd/node.yml
+  #   basic_auth:
+  #     username: Foo
+  #     password: Bar
 
 
 
