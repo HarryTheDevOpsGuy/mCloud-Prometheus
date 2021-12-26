@@ -16,6 +16,16 @@ alerting:
     - targets:
       - mcloud-alertmanager.herokuapp.com:443
 
+scrape_configs:
+  # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
+  - job_name: "prometheus"
+
+    # metrics_path defaults to '/metrics'
+    # scheme defaults to 'http'.
+
+    static_configs:
+      - targets: ["mcloud-alertmanager.herokuapp.com:443", "mcloud-prometheus.herokuapp.com:443"]
+
 
 # scrape_configs:
 #   - job_name: blackbox
