@@ -1,9 +1,5 @@
 # http://prometheus.io/docs/operating/configuration/
 
-# mCloud@97
-basic_auth_users:
-   - admin: '$2a$12$6KaOFDIF49Sfix2BE38po.tnKrpgJoYgCI5IihHtkGV4t5dK5MQ.G'
-
 global:
   evaluation_interval: 10s
   scrape_interval: 5s
