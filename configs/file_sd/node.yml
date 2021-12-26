@@ -1,0 +1,30 @@
+- labels:
+    env: monitoring
+    service: prometheus
+  targets:
+  - 192.168.43.41:9090
+
+- labels:
+    env: monitoring
+    service: alertmanager
+  targets:
+  - 192.168.43.41:9093
+
+- labels:
+    env: monitoring
+    service: telegraf
+  targets:
+  - 192.168.43.41:9295
+
+- labels:
+    env: monitoring
+    service: prometheus_exporter
+  targets:
+  - 192.168.43.41:9100
+  - blackbox:9115
+
+- labels:
+    env: monitoring
+    service: telegraf
+  targets:
+  - telegraf:9295
